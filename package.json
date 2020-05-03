@@ -4,12 +4,14 @@
   "description": "Commonly used utilities for Typescript/Javascript projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
   "scripts": {
+    "build": "tsc",
     "test": "jest --config jestconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/danielszuk/utilities/issues"
   },
-  "homepage": "https://github.com/danielszuk/utilities#readme"
+  "homepage": "https://github.com/danielszuk/utilities#readme",
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
 }
