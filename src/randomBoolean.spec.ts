@@ -11,14 +11,17 @@ describe('Gives true or false with equal probability', () => {
     mockMathRandom(0);
     expect(randomBoolean()).toBe(false);
   });
+
   test('false for below 0.5', () => {
     mockMathRandom(0.499);
     expect(randomBoolean()).toBe(false);
   });
+
   test('true for 0.5', () => {
     mockMathRandom(0.5);
     expect(randomBoolean()).toBe(true);
   });
+
   test('true for maximum: 0.999', () => {
     mockMathRandom(0.999);
     expect(randomBoolean()).toBe(true);
