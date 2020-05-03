@@ -4,7 +4,9 @@
   "description": "Commonly used utilities for Typescript/Javascript projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
@@ -29,6 +31,9 @@
   },
   "homepage": "https://github.com/danielszuk/utilities#readme",
   "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.4",
+    "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
   }
 }
