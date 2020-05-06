@@ -5,7 +5,7 @@
  */
 export const isEquivalent = (obj1: any, obj2: any) => {
   if (typeof obj1 !== 'object' || typeof obj2 !== 'object') {
-    throw new Error('isEmpty can be executed only by objects.');
+    throw new Error('isEmpty can be executed only on objects.');
   }
 
   const obj1Props = Object.getOwnPropertyNames(obj1);

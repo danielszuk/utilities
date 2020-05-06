@@ -1,4 +1,4 @@
-import { DeepPartial } from './types/DeepPartial';
+import { DeepPartial } from '..';
 
 /**
  * Assign an object into a target object, value by value deeply.
@@ -9,7 +9,7 @@ import { DeepPartial } from './types/DeepPartial';
  */
 export const deepAssign = <T>(target: T, toBeAssigned: DeepPartial<T>): void => {
   if (typeof target !== 'object' || typeof toBeAssigned !== 'object') {
-    throw new Error('deepAssign is only callable on objects.');
+    throw new Error('deepAssign can be executed only by objects.');
   }
 
   for (const attribute in toBeAssigned) {

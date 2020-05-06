@@ -1,5 +1,5 @@
 import { forEachAsync } from './forEachAsync';
-import { timeout } from './timeout';
+import { timeout } from '../timeout';
 
 test('Iterates over the array', () => {
   const array = [1, 2, 3];
