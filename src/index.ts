@@ -11,5 +11,6 @@ export { removeElements } from './removeElements';
 export { as } from './as';
 export { isEmpty } from './isEmpty';
 export { round } from './round';
+export { isEquivalent } from './isEquivalent';
 
 export { DeepPartial } from './types/DeepPartial';
