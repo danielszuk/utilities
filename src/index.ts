@@ -6,5 +6,6 @@ export { forEachAsync } from './forEachAsync';
 export { clone } from './clone';
 export { deepAssign } from './deepAssign';
 export { timeout } from './timeout';
+export { getSafe } from './getSafe';
 
 export { DeepPartial } from './types/DeepPartial';
