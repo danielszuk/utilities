@@ -9,5 +9,6 @@ export { timeout } from './timeout';
 export { getSafe } from './getSafe';
 export { removeElements } from './removeElements';
 export { as } from './as';
+export { isEmpty } from './isEmpty';
 
 export { DeepPartial } from './types/DeepPartial';
