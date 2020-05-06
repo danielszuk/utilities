@@ -16,9 +16,7 @@ export const isEquivalent = (obj1: any, obj2: any) => {
     return false;
   }
 
-  for (let i = 0; i < obj1Props.length; i++) {
-    const propName = obj1Props[i];
-
+  for (const propName of obj1Props) {
     if (typeof obj1[propName] !== typeof obj2[propName]) {
       // If type of values of same property are different, objects are not equivalent
       return false;
