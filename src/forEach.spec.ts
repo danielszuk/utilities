@@ -1,10 +1,9 @@
-import { forEachSync, forEachSyncBackward } from './forEachSync';
-import { timeout } from './timeout';
+import { forEach, forEachBackward } from './forEach';
 
 test('Iterates over an array', async () => {
   const array = [1, 2, 3, 4];
   let sum: number;
-  const summarizer = async (element: number) => {
+  const summarizer = (element: number) => {
     sum += element;
   };
 
@@ -14,28 +13,27 @@ test('Iterates over an array', async () => {
   expect(sum).toBe(10);
 
   sum = 0;
-  await forEachSync(array, summarizer);
+  await forEach(array, summarizer);
   expect(sum).toBe(10);
 
   sum = 0;
-  await forEachSyncBackward(array, summarizer);
+  await forEachBackward(array, summarizer);
   expect(sum).toBe(10);
 });
 
 test('Breaks the iteration', async () => {
   const array = [1, 2, 3, 4];
   let sum: number;
-  const summarizer = async (element: number) => {
-    await timeout(0); // delay the execution until the next tick
+  const summarizer = (element: number) => {
     if (element === 3) return false;
     else sum += element;
   };
 
   sum = 0;
-  await forEachSync(array, summarizer);
+  await forEach(array, summarizer);
   expect(sum).toBe(3);
 
   sum = 0;
-  await forEachSyncBackward(array, summarizer);
+  await forEachBackward(array, summarizer);
   expect(sum).toBe(4);
 });
