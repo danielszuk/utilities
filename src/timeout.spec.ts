@@ -8,7 +8,7 @@ test('timeout awaited', async () => {
   expect(finishTime - startTime < timeoutInMs).toBe(true);
 
   startTime = new Date().getTime();
-  await timeout(timeoutInMs);
+  await timeout(timeoutInMs * 1.1); // compensate setTimeout inaccuracy
   finishTime = new Date().getTime();
   expect(finishTime - startTime > timeoutInMs).toBe(true);
 });
