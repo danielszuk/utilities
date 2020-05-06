@@ -1,5 +1,5 @@
 /**
- * Executes a provided function asynchronously once for each array element (same as the javascript's built in forEach,
+ * Executes a provided async function asynchronously once for each array element (same as the javascript's built in forEach,
  * but this is awaitable).
  *
  * @param array - iterates over the elements of the array

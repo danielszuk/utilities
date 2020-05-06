@@ -1,5 +1,5 @@
 /**
- * Executes a provided function synchronously once for each array element (unlike the javascript's built in forEach,
+ * Executes a provided async function synchronously once for each array element (unlike the javascript's built in forEach,
  * which runs asynchronously). Optionally you can break out of the iteration at any element.
  *
  * @param array - iterates over the elements of the array
@@ -19,7 +19,7 @@ export const forEachSync = async <T>(
 };
 
 /**
- * Executes a provided function synchronously once for each array element (unlike the javascript's built in forEach,
+ * Executes a provided async function synchronously once for each array element (unlike the javascript's built in forEach,
  * which runs asynchronously). Optionally you can break out of the iteration at any element.
  *
  * @param array - iterates Backward over the elements of the array

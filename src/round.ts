@@ -1,5 +1,5 @@
 /**
- * Round a number to a given decimal place
+ * Rounds a number to a given decimal place.
  *
  * @param num number to round
  * @param [decimals] the decimal place to round to

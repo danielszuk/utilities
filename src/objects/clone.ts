@@ -1,5 +1,5 @@
 /**
- * Creates a new object with the exact same values, but without the reference.
+ * Creates a new object from the given one with the exact same values, but without the reference.
  *
  * @param object The original object to be cloned
  * @returns a new object with the same attributes and corresponding values, but without the reference to the original object
