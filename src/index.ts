@@ -7,5 +7,6 @@ export { clone } from './clone';
 export { deepAssign } from './deepAssign';
 export { timeout } from './timeout';
 export { getSafe } from './getSafe';
+export { removeElements } from './removeElements';
 
 export { DeepPartial } from './types/DeepPartial';
