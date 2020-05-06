@@ -8,5 +8,6 @@ export { deepAssign } from './deepAssign';
 export { timeout } from './timeout';
 export { getSafe } from './getSafe';
 export { removeElements } from './removeElements';
+export { as } from './as';
 
 export { DeepPartial } from './types/DeepPartial';
