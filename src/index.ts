@@ -10,5 +10,6 @@ export { getSafe } from './getSafe';
 export { removeElements } from './removeElements';
 export { as } from './as';
 export { isEmpty } from './isEmpty';
+export { round } from './round';
 
 export { DeepPartial } from './types/DeepPartial';
