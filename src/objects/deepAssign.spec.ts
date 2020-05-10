@@ -1,5 +1,20 @@
 import { deepAssign } from './deepAssign';
 
+test('Try assign a non-object', () => {
+  // @ts-ignore
+  expect(() => deepAssign({ a: 1, b: 2, c: 3 }, 'a')).toThrow();
+});
+
+test('Try assign an inherited property', () => {
+  const target = { a: 1, b: 2, c: 3 };
+  deepAssign(target, Object.create({ a: 27 }));
+
+  expect(Object.keys(target).length).toBe(3);
+  expect(target.a).toBe(1);
+  expect(target.b).toBe(2);
+  expect(target.c).toBe(3);
+});
+
 test('Assign a simple value', () => {
   const target = { a: 1, b: 2, c: 3 };
   deepAssign(target, { b: 27, c: 42 });
