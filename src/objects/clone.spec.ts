@@ -1,5 +1,11 @@
 import { clone } from './clone';
 
+test('Clone a non-object', () => {
+  const value = 5;
+  const valueCloned = clone(value);
+  expect(value === valueCloned).toBe(true);
+});
+
 const simpleOriginal = { a: 1, b: 2 };
 const simpleReference = simpleOriginal;
 const simpleCloned = clone(simpleOriginal);
