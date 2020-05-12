@@ -13,14 +13,13 @@ export const deepAssign = <T>(target: T, toBeAssigned: DeepPartial<T>): T => {
     throw new Error('deepAssign can be executed only by objects.');
   }
 
-  for (const attribute in toBeAssigned) {
-    if (!toBeAssigned.hasOwnProperty(attribute)) continue;
-
-    if (typeof toBeAssigned[attribute] === 'object' && typeof target[attribute] === 'object') {
-      deepAssign(target[attribute], toBeAssigned[attribute]!);
+  for (const [Key, value] of Object.entries(toBeAssigned)) {
+    const key = Key as Extract<keyof T, string>;
+    if (typeof value === 'object' && typeof target[key] === 'object') {
+      deepAssign(target[key], value!);
     } else {
       // @ts-ignore
-      target[attribute] = toBeAssigned[attribute];
+      target[key] = value;
     }
   }
 
