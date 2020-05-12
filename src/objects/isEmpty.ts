@@ -8,10 +8,5 @@ export const isEmpty = (object: any): boolean => {
     throw new Error('isEmpty can be executed only on object.');
   }
 
-  for (const key in object) {
-    if (object.hasOwnProperty(key)) {
-      return false;
-    }
-  }
-  return true;
+  return !Object.values(object).length;
 };

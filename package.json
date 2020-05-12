@@ -1,6 +1,6 @@
 {
   "name": "@danielszuk/utilities",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Commonly used utilities for Typescript/Javascript projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,8 +14,7 @@
     "lint": "tslint -p tsconfig.json && prettier --check \"src/**/*.ts\"",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src"
+    "preversion": "npm run lint"
   },
   "repository": {
     "type": "git",
