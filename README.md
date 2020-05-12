@@ -1,4 +1,7 @@
 # Utilities
+[![npm package](https://img.shields.io/npm/v/npm-get-version.svg)](http://npmjs.org/package/npm-get-version)
+[![Coverage Status](https://coveralls.io/repos/github/danielszuk/utilities/badge.svg?branch=master)](https://coveralls.io/github/danielszuk/utilities?branch=master)
+
 Commonly used utilities for Typescript/Javascript projects.
 
 ## Installation
