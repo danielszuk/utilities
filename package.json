@@ -1,6 +1,6 @@
 {
   "name": "@danielszuk/utilities",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Commonly used utilities for Typescript/Javascript projects.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
