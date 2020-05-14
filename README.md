@@ -1,10 +1,10 @@
 # Utilities
-[![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
+[![npm package](https://img.shields.io/npm/v/npm-get-version.svg)](http://npmjs.org/package/npm-get-version)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+![Node.js CI](https://github.com/danielszuk/utilities/workflows/Node.js%20CI/badge.svg)
 ![David](https://img.shields.io/david/danielszuk/utilities)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/@danielszuk/utilities)
 [![Coverage Status](https://coveralls.io/repos/github/danielszuk/utilities/badge.svg?branch=master)](https://coveralls.io/github/danielszuk/utilities?branch=master)
-[![npm package](https://img.shields.io/npm/v/npm-get-version.svg)](http://npmjs.org/package/npm-get-version)
-[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
 Commonly used utilities for Typescript/Javascript projects.
 
