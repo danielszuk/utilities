@@ -1,5 +1,7 @@
 # Utilities
-[![npm package](https://img.shields.io/npm/v/npm-get-version.svg)](http://npmjs.org/package/npm-get-version)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+![David](https://img.shields.io/david/danielszuk/utilities)
+![npm bundle size](https://img.shields.io/bundlephobia/min/@danielszuk/utilities)
 [![Coverage Status](https://coveralls.io/repos/github/danielszuk/utilities/badge.svg?branch=master)](https://coveralls.io/github/danielszuk/utilities?branch=master)
 
 Commonly used utilities for Typescript/Javascript projects.
