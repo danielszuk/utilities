@@ -1,4 +1,4 @@
-import { clone } from './clone';
+import { clone } from '../../src';
 
 test('Clone a non-object', () => {
   const value = 5;

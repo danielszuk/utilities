@@ -3,6 +3,6 @@
  *
  * @param html a string decorated with html markup
  */
-export const htmlToText = (html: string): string => {
+export default function htmlToText(html: string): string {
   return html.replace(/<br(\/)?>/g, ' ').replace(/<([^>])*>/g, '');
-};
+}

@@ -1,4 +1,4 @@
-import { degreeToRadian } from './degreeToRadian';
+import { degreeToRadian } from '../src';
 
 test('Converts 0°', () => {
   expect(degreeToRadian(0)).toBe(0);

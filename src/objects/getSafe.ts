@@ -4,10 +4,10 @@
  * @param getter - getter function
  * @returns the value of the getter or undefined if the execution throws error
  */
-export const getSafe = <T>(getter: () => T): T | undefined => {
+export default function getSafe<T>(getter: () => T): T | undefined {
   try {
     return getter();
   } catch (e) {
     return undefined;
   }
-};
+}

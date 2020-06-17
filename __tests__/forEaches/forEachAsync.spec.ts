@@ -1,12 +1,13 @@
-import { forEachAsync } from './forEachAsync';
-import { timeout } from '../timeout';
+import { forEachAsync, timeout } from '../../src';
 
 test('Iterates over the array', () => {
   const array = [1, 2, 3];
 
   // reference
   let sum = 0;
-  array.forEach((element) => (sum += element));
+  array.forEach((element) => {
+    sum += element;
+  });
   expect(sum).toBe(6);
 
   sum = 0;
@@ -18,7 +19,8 @@ test('Iterates over the array', () => {
 
 test('Iteration is awaitable', async () => {
   const array = [1, 2, 3];
-  let summable: boolean, sum: number;
+  let summable: boolean;
+  let sum: number;
   const summarizer = async (element: number) => {
     await timeout(0); // delay the execution until the next tick
     if (summable) sum += element;

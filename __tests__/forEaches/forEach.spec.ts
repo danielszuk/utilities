@@ -1,4 +1,4 @@
-import { forEach, forEachBackward } from './forEach';
+import { forEach, forEachBackward } from '../../src';
 
 test('Iterates over an array', async () => {
   const array = [1, 2, 3, 4];
@@ -26,7 +26,8 @@ test('Breaks the iteration', async () => {
   let sum: number;
   const summarizer = (element: number) => {
     if (element === 3) return false;
-    else sum += element;
+    sum += element;
+    return true;
   };
 
   sum = 0;

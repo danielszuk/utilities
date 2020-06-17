@@ -1,4 +1,4 @@
-import { isEquivalent } from './isEquivalent';
+import { isEquivalent } from '../../src';
 
 test('non-objects equality', () => {
   expect(() => isEquivalent({ a: 1 }, 'a')).toThrow();
@@ -34,7 +34,7 @@ test('Two different objects equality', () => {
   expect(
     isEquivalent(
       { a: 1, b: { ba: 21, bb: 22 } },
-      { a: 1, b: { ba: 21, bb: 41 } },
-    ),
+      { a: 1, b: { ba: 21, bb: 41 } }
+    )
   ).toBe(false);
 });

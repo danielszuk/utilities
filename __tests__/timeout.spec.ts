@@ -1,4 +1,4 @@
-import { timeout } from './timeout';
+import { timeout } from '../src';
 
 test('timeout awaited', async () => {
   const timeoutInMs = 1000;

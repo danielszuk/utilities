@@ -1,4 +1,4 @@
-import { isEmpty } from './isEmpty';
+import { isEmpty } from '../../src';
 
 test('test a non-object', () => {
   expect(() => isEmpty(27)).toThrow();

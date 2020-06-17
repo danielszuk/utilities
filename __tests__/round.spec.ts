@@ -1,4 +1,4 @@
-import { round } from './round';
+import { round } from '../src';
 
 test('round to 2 decimals', () => {
   expect(round(1.237, 2)).toBe(1.24);

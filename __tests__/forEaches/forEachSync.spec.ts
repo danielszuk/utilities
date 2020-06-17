@@ -1,5 +1,4 @@
-import { forEachSync, forEachSyncBackward } from './forEachSync';
-import { timeout } from '../timeout';
+import { forEachSync, forEachSyncBackward, timeout } from '../../src';
 
 test('Iterates over an array', async () => {
   const array = [1, 2, 3, 4];
@@ -28,7 +27,8 @@ test('Breaks the iteration', async () => {
   const summarizer = async (element: number) => {
     await timeout(0); // delay the execution until the next tick
     if (element === 3) return false;
-    else sum += element;
+    sum += element;
+    return true;
   };
 
   sum = 0;

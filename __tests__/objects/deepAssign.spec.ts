@@ -1,6 +1,7 @@
-import { deepAssign } from './deepAssign';
+import { deepAssign } from '../../src';
 
 test('Try assign a non-object', () => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   expect(() => deepAssign({ a: 1, b: 2, c: 3 }, 'a')).toThrow();
 });

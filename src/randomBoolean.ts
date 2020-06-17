@@ -3,4 +3,6 @@
  *
  * @returns a true or a false with equal probability
  */
-export const randomBoolean: () => boolean = () => Math.random() >= 0.5;
+export default function randomBoolean() {
+  return Math.random() >= 0.5;
+}

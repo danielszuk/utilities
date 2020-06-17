@@ -6,17 +6,17 @@
  * @param fn - runs the function once for all the array elements from the beginning.
  * You can break out of the iteration by returns false in this function.
  */
-export const forEach = <T>(
+export default function forEach<T>(
   array: T[],
-  fn: (element: T) => false | undefined | void,
-): void => {
-  const length = array.length;
-  for (let i = 0; i < length; i++) {
+  fn: (element: T) => boolean | void
+): void {
+  const { length } = array;
+  for (let i = 0; i < length; i += 1) {
     if (fn(array[i]) === false) {
       break;
     }
   }
-};
+}
 
 /**
  * Executes a provided function once for each array element (same as the javascript's built in forEach,
@@ -26,13 +26,13 @@ export const forEach = <T>(
  * @param fn - runs the function once for all the array elements from the end.
  * You can break out of the iteration by returns false in this function
  */
-export const forEachBackward = <T>(
+export function forEachBackward<T>(
   array: T[],
-  fn: (element: T) => false | undefined | void,
-): void => {
-  for (let i = array.length - 1; 0 <= i; i--) {
+  fn: (element: T) => boolean | void
+): void {
+  for (let i = array.length - 1; i >= 0; i -= 1) {
     if (fn(array[i]) === false) {
       break;
     }
   }
-};
+}

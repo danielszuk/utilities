@@ -1,4 +1,4 @@
-import { randomBoolean } from './randomBoolean';
+import { randomBoolean } from '../src';
 
 const mockMathRandom = (value: number) => {
   const mockMath = Object.create(global.Math);

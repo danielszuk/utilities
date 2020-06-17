@@ -3,7 +3,8 @@
  *
  * @returns true if objects are equivalent, false if they are not
  */
-export const isEquivalent = (obj1: any, obj2: any) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function isEquivalent(obj1: any, obj2: any) {
   if (typeof obj1 !== 'object' || typeof obj2 !== 'object') {
     throw new Error('isEmpty can be executed only on objects.');
   }
@@ -16,11 +17,13 @@ export const isEquivalent = (obj1: any, obj2: any) => {
     return false;
   }
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const propName of obj1Props) {
     if (typeof obj1[propName] !== typeof obj2[propName]) {
       // If type of values of same property are different, objects are not equivalent
       return false;
-    } else if (typeof obj1[propName] === 'object') {
+    }
+    if (typeof obj1[propName] === 'object') {
       if (!isEquivalent(obj1[propName], obj2[propName])) {
         // If object values of same property are not equal, objects are not equivalent
         return false;
@@ -33,4 +36,4 @@ export const isEquivalent = (obj1: any, obj2: any) => {
 
   // If we made it this far, objects are considered equivalent
   return true;
-};
+}

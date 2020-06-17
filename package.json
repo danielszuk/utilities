@@ -10,8 +10,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
-    "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json && prettier --check \"src/**/*.ts\"",
+    "lint": "eslint src/**/*.{js,ts} __tests__/**/*.{js,ts}",
+    "lint-fix": "eslint --fix src/**/*.{js,ts} __tests__/**/*.{js,ts}",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint"
@@ -40,5 +40,6 @@
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "dependencies": {}
 }

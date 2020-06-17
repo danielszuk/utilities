@@ -4,14 +4,16 @@
  * @param object The original object to be cloned
  * @returns a new object with the same attributes and corresponding values, but without the reference to the original object
  */
-export const clone = <T>(object: T): T => {
+export default function clone<T>(object: T): T {
   if (!object || typeof object !== 'object') {
     return object;
   }
 
+  // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
   // @ts-ignore
   const newObject = new object.constructor();
 
+  // eslint-disable-next-line no-restricted-syntax
   for (const attribute in object) {
     if (typeof object[attribute] === 'object') {
       newObject[attribute] = clone(object[attribute]);
@@ -21,4 +23,4 @@ export const clone = <T>(object: T): T => {
   }
 
   return newObject;
-};
+}
