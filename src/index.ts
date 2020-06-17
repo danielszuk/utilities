@@ -12,5 +12,6 @@ export { as } from './as';
 export { isEmpty } from './objects/isEmpty';
 export { round } from './round';
 export { isEquivalent } from './objects/isEquivalent';
+export { htmlToText } from './htmlToText';
 
 export { DeepPartial } from './types/DeepPartial';
