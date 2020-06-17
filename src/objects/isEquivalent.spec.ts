@@ -31,5 +31,10 @@ test('Two different objects equality', () => {
   expect(isEquivalent({ a: 1 }, { a: 2 })).toBe(false);
   expect(isEquivalent({ a: 1 }, { a: '1' })).toBe(false);
   expect(isEquivalent({ a: 1, b: 2 }, { a: 1 })).toBe(false);
-  expect(isEquivalent({ a: 1, b: { ba: 21, bb: 22 } }, { a: 1, b: { ba: 21, bb: 41 } })).toBe(false);
+  expect(
+    isEquivalent(
+      { a: 1, b: { ba: 21, bb: 22 } },
+      { a: 1, b: { ba: 21, bb: 41 } },
+    ),
+  ).toBe(false);
 });
