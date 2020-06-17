@@ -6,7 +6,7 @@ test('Try assign a non-object', () => {
   expect(() => deepAssign({ a: 1, b: 2, c: 3 }, 'a')).toThrow();
 });
 
-test('Assign a simple value', () => {
+test('Assign simple values', () => {
   const target = { a: 1, b: 2, c: 3 };
   deepAssign(target, { b: 27, c: 42 });
 

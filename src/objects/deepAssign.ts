@@ -17,13 +17,15 @@ export default function deepAssign<T>(
   }
 
   // eslint-disable-next-line no-restricted-syntax
-  for (const [Key, value] of Object.entries(toBeAssigned)) {
+  for (const [Key, Value] of Object.entries(toBeAssigned)) {
     const key = Key as Extract<keyof T, string>;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const value = Value as any;
     if (typeof value === 'object' && typeof target[key] === 'object') {
-      deepAssign(target[key], value || {});
+      deepAssign(target[key], value);
     } else {
-      // eslint-disable-next-line no-param-reassign, @typescript-eslint/no-explicit-any
-      target[key] = value as any;
+      // eslint-disable-next-line no-param-reassign
+      target[key] = value;
     }
   }
 
