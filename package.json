@@ -33,11 +33,12 @@
   "homepage": "https://github.com/danielszuk/utilities#readme",
   "devDependencies": {
     "@types/jest": "^25.2.1",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-typescript-prettier": "^2.1.1",
+    "eslint-plugin-jest": "^23.13.2",
     "jest": "^25.5.4",
     "prettier": "^2.0.5",
     "ts-jest": "^25.4.0",
-    "tslint": "^6.1.2",
-    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   }
 }
