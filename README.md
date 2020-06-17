@@ -51,7 +51,7 @@ forEach([1,2,3], (number) => console.log(number));
 ## List of available functions
 For detailed description, check **the definition of the imported function** (either by your IDE, or from the source code).
 
-For detailed examples, check the **corresponding *name.spec.ts* file in the *src/* folder**
+For detailed examples, check the **corresponding *name.spec.ts* file in the *\_\_tests\_\_/* folder**
 
 | Name     |      Short Description      |  Example |
 |:---------|:---------------------------|:---------|
@@ -64,6 +64,7 @@ For detailed examples, check the **corresponding *name.spec.ts* file in the *src
 | isEmpty | Determines whether an object is empty or not. | ```isEmpty({}) // true``` |
 | isEquivalent | Determines whether two objects are equivalent (means all their properties values are the same). | ```isEquivalent({ a: 1 }, { a: 1 }) // true``` |
 | degreeToRadian | Converts an angle in degree to radian. | ```degreeToRadian(30) // 0.5235987755982988``` |
+| htmlToText | Removes all html markup from a string. | ```htmlToText(`<b>Name</b>`) // 'Name'``` | 
 | randomBoolean | Generates a random boolean value. | ```randomBoolean() // true OR false``` |
 | removeElements | Removes elements from an array. Modify the original array. | ```removeElements([ 1, 2, 3 ], 2, 3) // [ 1 ]``` |
 | round | Rounds a number to a given decimal place. | ```round(1.237, 2) // 1.24``` |
