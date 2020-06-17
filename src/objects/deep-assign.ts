@@ -1,4 +1,4 @@
-import { DeepPartial } from '../types/DeepPartial';
+import { DeepPartial } from '../types/deep-partial';
 
 /**
  * Assign an object's values into a target object, value by value deeply (unlike the javascript's built in

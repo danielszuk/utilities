@@ -1,18 +1,18 @@
-import randomBoolean from './randomBoolean';
-import degreeToRadian from './degreeToRadian';
-import forEachSync, { forEachSyncBackward } from './forEaches/forEachSync';
-import forEach, { forEachBackward } from './forEaches/forEach';
-import forEachAsync from './forEaches/forEachAsync';
+import randomBoolean from './random-boolean';
+import degreeToRadian from './degree-to-radian';
+import forEachSync, { forEachSyncBackward } from './for-eaches/for-each-sync';
+import forEach, { forEachBackward } from './for-eaches/for-each';
+import forEachAsync from './for-eaches/for-each-async';
 import clone from './objects/clone';
-import deepAssign from './objects/deepAssign';
+import deepAssign from './objects/deep-assign';
 import timeout from './timeout';
-import getSafe from './objects/getSafe';
-import removeElements from './removeElements';
+import getSafe from './objects/get-safe';
+import removeElements from './remove-elements';
 import as from './as';
-import isEmpty from './objects/isEmpty';
+import isEmpty from './objects/is-empty';
 import round from './round';
-import isEquivalent from './objects/isEquivalent';
-import htmlToText from './htmlToText';
+import isEquivalent from './objects/is-equivalent';
+import htmlToText from './html-to-text';
 
 export {
   randomBoolean,
@@ -34,4 +34,4 @@ export {
   htmlToText,
 };
 
-export { DeepPartial } from './types/DeepPartial';
+export { DeepPartial } from './types/deep-partial';
