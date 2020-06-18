@@ -28,4 +28,5 @@ REFACTOR: drop support for Node 6
 ## Add an util
 1. Add the util as the *src/utilName.ts* file
 2. Add **unit tests** to the corresponding *\_\_tests\_\_/utilName.spec.ts* file
+3. Extend the *README.MD* with the new available exports
 3. Run the linter before pr: **npm run lint**
