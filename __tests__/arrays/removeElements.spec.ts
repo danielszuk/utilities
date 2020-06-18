@@ -1,4 +1,4 @@
-import { removeElements } from '../src';
+import { removeElements } from '../../src';
 
 test('remove an element from an array', () => {
   const ar = [1, 2, 3];

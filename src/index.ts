@@ -7,12 +7,13 @@ import clone from './objects/clone';
 import deepAssign from './objects/deep-assign';
 import timeout from './timeout';
 import getSafe from './objects/get-safe';
-import removeElements from './remove-elements';
+import removeElements from './arrays/remove-elements';
 import as from './as';
 import isEmpty from './objects/is-empty';
 import round from './round';
 import isEquivalent from './objects/is-equivalent';
 import htmlToText from './html-to-text';
+import circulateArray from './arrays/circulate-array';
 
 export {
   randomBoolean,
@@ -32,6 +33,7 @@ export {
   round,
   isEquivalent,
   htmlToText,
+  circulateArray,
 };
 
 export { DeepPartial } from './types/deep-partial';

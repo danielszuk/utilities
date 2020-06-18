@@ -63,10 +63,11 @@ For detailed examples, check the **corresponding *name.spec.ts* file in the *\_\
 | getSafe | Executes a getter and returns with the value. If the execution runs on error, returns with undefined. | ```getSafe(() => result.attribute.value)``` |
 | isEmpty | Determines whether an object is empty or not. | ```isEmpty({}) // true``` |
 | isEquivalent | Determines whether two objects are equivalent (means all their properties values are the same). | ```isEquivalent({ a: 1 }, { a: 1 }) // true``` |
+| removeElements | Removes elements from an array. Modify the original array. | ```removeElements([ 1, 2, 3 ], 2, 3) // [ 1 ]``` |
+| circulateArray | Circulates over the elements of an array. | ```const next = circulateArray([12, 21, 39]); next(); next(); next(); next(); // 12 21 39 12``` |
 | degreeToRadian | Converts an angle in degree to radian. | ```degreeToRadian(30) // 0.5235987755982988``` |
 | htmlToText | Removes all html markup from a string. | ```htmlToText(`<b>Name</b>`) // 'Name'``` | 
 | randomBoolean | Generates a random boolean value. | ```randomBoolean() // true OR false``` |
-| removeElements | Removes elements from an array. Modify the original array. | ```removeElements([ 1, 2, 3 ], 2, 3) // [ 1 ]``` |
 | round | Rounds a number to a given decimal place. | ```round(1.237, 2) // 1.24``` |
 | timeout | Delay the execution for a specified number of milliseconds. | ```await timeout(1000)``` |
 | as | Strict type checking a single value. | ```as<IExample>({ a: 1, b: 2 })``` |
